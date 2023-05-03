@@ -17,9 +17,8 @@
     padding: 0;
 }
 
-body,
-html {
-    background-color: var(--clr-primary-800);
+body {
+    background: #000;
     color: var(--clr-primary-200);
 }
 
@@ -28,7 +27,7 @@ html {
  }
 
  .section-m1 {
-    margin: 40px 0;
+    margin: 60px 0;
  }
 
  span {
@@ -38,13 +37,13 @@ html {
 
 /* Hero Section */
 
-#hero {
+#hero .hero {
     height: 100vh;
     width: 100%;
     display: flex;
 }
 
-#hero .hero-content-right {
+#hero .hero .hero-content-right {
     width: 50%;
     background: var(--clr-primary-800);
     color: var(--clr-primary-200);
@@ -54,7 +53,7 @@ html {
     align-items: center;
 }
 
-#hero .right-container {
+#hero .hero .right-container {
     width: 100%;
     height: 200px;
     text-align: left;
@@ -62,13 +61,13 @@ html {
     padding-left: 40px;
 }
 
-#hero .hero-image {
+#hero .hero .hero-image {
     position: relative;
     min-width: 50%;
     background: var(--clr-primary-800);
 }
 
-#hero img {
+#hero .hero img {
     position: absolute;
     right: 0%;
     background-repeat: no-repeat;
@@ -135,13 +134,13 @@ button:hover {
 
 /* About section */
 
-#about {
+#about .about {
     width: 100%;
     display: flex;
 }
 
-#about .about-content-left,
-#skills .skills-content-left {
+#about .about .about-content-left,
+#skills .skills .skills-content-left {
     width: 50%;
     background: var(--clr-primary-800);
     color: var(--clr-primary-200);
@@ -149,8 +148,8 @@ button:hover {
     padding-top: 50px;
 }
 
-#about .left-container,
-#skills .left-container {
+#about .about .left-container,
+#skills .skills .left-container {
     width: 100%;
     height: 200px;
     text-align: right;
@@ -158,8 +157,8 @@ button:hover {
     padding-right: 40px;
 }
 
-#about .about-content-right,
-#skills .skills-content-right {
+#about .about .about-content-right,
+#skills .skills .skills-content-right {
     width: 50%;
     background: var(--clr-primary-800);
     color: var(--clr-primary-200);
@@ -169,8 +168,8 @@ button:hover {
     padding-bottom: 50px;
 }
 
-#about .right-container,
-#skills .right-container {
+#about .about .right-container,
+#skills .skills .right-container {
     width: 100%;
     height: 200px;
     text-align: left;
@@ -180,14 +179,26 @@ button:hover {
 
 /* Skills section */
 
-#skills {
+#skills .skills {
     width: 100%;
     display: flex;
 }
 
+#skills .skills .left-container,
+#skills .skills .right-container {
+    display: flex;
+    align-items: center;
+}
+
+#skills .skills h6 {
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 /* Projects section */
 
-#projects {
+#projects .projects {
    position: relative;
    margin: 0;
    padding: 0;
@@ -195,7 +206,7 @@ button:hover {
    background-color: var(--clr-primary-800);
 }
 
-#projects .album {
+#projects .projects .album {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -203,7 +214,7 @@ button:hover {
     width: 1020px;
 }
 
-#projects .album .box {
+#projects .projects .album .box {
    display: inline-block;
    position: relative;
    list-style: none;
@@ -215,12 +226,12 @@ button:hover {
    width: 100%;
 }
 
-#projects .box.snake {
+#projects .projects .box.snake {
    position: relative;
    overflow: hidden;
 }
 
-.overlay {
+#projects .projects .overlay {
    position: absolute;
    text-align: center;
    width: 100%;
@@ -230,7 +241,7 @@ button:hover {
    left: 0;
 }
 
-.overlay h2 {
+#projects .projects .overlay h2 {
    position: absolute;
    margin: 0;
    padding: 0;
@@ -244,20 +255,20 @@ button:hover {
    font-weight: 300;
 }
 
-.overlay a {
+#projects .projects .overlay a {
     text-decoration: none;
     color: var(--clr-primary-200);
 }
 
 /* Hero bottom */
 
-#hero-bottom {
+#hero-bottom .hero-bottom {
     height: 100vh;
     width: 100%;
     display: flex;
 }
 
-#hero-bottom .hero-bottom-content-left {
+#hero-bottom .hero-bottom .hero-bottom-content-left {
     width: 50%;
     background: var(--clr-primary-800);
     color: var(--clr-primary-200);
@@ -267,7 +278,7 @@ button:hover {
     align-items: center;
 }
 
-#hero-bottom .left-container {
+#hero-bottom .hero-bottom .left-container {
     width: 100%;
     height: 200px;
     text-align: right;
@@ -277,14 +288,14 @@ button:hover {
     padding-right: 40px;
 }
 
-#hero-bottom .hero-bottom-image {
+#hero-bottom .hero-bottom .hero-bottom-image {
     position: relative;
     min-width: 50%;
     background: var(--clr-primary-800);
     overflow: hidden;
 }
 
-#hero-bottom img {
+#hero-bottom .hero-bottom img {
     position: absolute;
     left: 0%;
     background-repeat: no-repeat;
@@ -307,6 +318,7 @@ button:hover {
 
 #contacts .col-md-7 {
     padding: 20px;
+    background-color: white;
 }
 
 #contacts .col-md-5 {
@@ -348,4 +360,15 @@ footer {
 
 footer h5 {
     font-size: 16px;
+}
+
+/* Media Query start */
+
+@media (max-width:600px) {
+
+    #contacts .container {
+        width: 95%;
+        padding: 10px;
+        border-radius: 0px;
+    }
 }
