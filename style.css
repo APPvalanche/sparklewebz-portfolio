@@ -1,5 +1,5 @@
 :root {
-    --clr-primary-200: #fdfffc;
+    --clr-primary-200: #fff;
     --clr-primary-800: #000;
 
     --clr-accent-200: #e71d36;
@@ -15,11 +15,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: var(--ff-accent);
 }
 
 body {
-    background: #000;
-    color: var(--clr-primary-200);
+    background: var(--clr-primary-200);
+    color: var(--clr-primary-800);
 }
 
 .section-p1 {
@@ -27,7 +28,7 @@ body {
  }
 
  .section-m1 {
-    margin: 0px 200px;
+    margin: 0px 50px;
  }
 
  span {
@@ -66,8 +67,8 @@ h1 {
     width: 100%;
     height: 200px;
     text-align: left;
-    border-left: 4px solid var(--clr-primary-200);
-    border-top: 4px solid var(--clr-primary-200);
+    border-left: 5px solid var(--clr-primary-200);
+    border-top: 5px solid var(--clr-primary-200);
     padding-left: 20px;
     padding-top: 10px;
 }
@@ -87,6 +88,32 @@ h1 {
     height: 100%;
 }
 
+/* Animation writer */
+
+.tt {
+    display: none;
+  }
+
+  .ttt::after {
+    content : "\0020";
+    animation: pulse 1s infinite;
+    color: transparent;
+    border-right: 3px solid var(--clr-primary-200);
+    margin-left: 4px;
+  }
+  
+  @keyframes pulse {
+    0% {
+       border-right: 3px solid  var(--clr-primary-200);
+    }
+    50% {
+       border-right: 3px solid  transparent;
+    }
+    100% {
+       border-right: 3px solid  var(--clr-primary-200);
+    }
+  }
+
 /* Header Section */
 
 #header {
@@ -95,13 +122,15 @@ h1 {
     height: 80px;
     align-items: center;
     padding: 30px 10%;
-    background-color: var(--clr-primary-200);
+    margin-top: 80px;
+    background: var(--clr-primary-800);
     color: var(--clr-primary-200);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 #logo {
     font-family: var(--ff-accent);
-    color: var(--clr-primary-800);
+    color: var(--clr-primary-200);
     font-size: 22px;
     cursor: pointer;
 }
@@ -121,26 +150,11 @@ h1 {
     text-decoration: none;
     font-size: 22px;
     font-weight: 500;
-    color: var(--clr-primary-800);
+    color: var(--clr-primary-200);
 }
 
 .nav-links li a:hover {
     color: var(--clr-accent-800);
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(216, 0, 50, 1);
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    border: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(245, 0, 50, 1);
 }
 
 /* About section */
@@ -153,8 +167,8 @@ button:hover {
 #about .about .about-content-left {
     width: 50%;
     align-items: center;
-    background: var(--clr-primary-800);
-    color: var(--clr-primary-200);
+    background: var(--clr-primary-200);
+    color: var(--clr-primary-800);
     padding-right: 20px;
     padding-top: 50px;
 }
@@ -163,15 +177,15 @@ button:hover {
     width: 100%;
     height: 250px;
     text-align: right;
-    border-right: 4px solid var(--clr-primary-200);
+    border-top: 10px solid var(--clr-primary-800);
     padding-right: 10px;
     padding-bottom: 10px;
 }
 
 #about .about .about-content-right {
     width: 50%;
-    background: var(--clr-primary-800);
-    color: var(--clr-primary-200);
+    background: var(--clr-primary-200);
+    color: var(--clr-primary-800);
     text-align: left;
     padding-left: 20px;
     padding-top: 305px;
@@ -182,9 +196,9 @@ button:hover {
     width: 100%;
     height: 200px;
     text-align: left;
-    border-left: 4px solid var(--clr-primary-200);
     padding-left: 20px;
     padding-top: 20px;
+    border-top: 10px solid var(--clr-primary-800);
 }
 
 /* Skills section */
@@ -203,15 +217,15 @@ button:hover {
     width: 100%;
     height: 200px;
     text-align: left;
-    border-left: 4px solid var(--clr-primary-200);
+    border-top: 10px solid var(--clr-primary-800);
     padding-left: 20px;
     padding-top: 20px;
 }
 
 #skills .skills .skills-content-right {
     width: 50%;
-    background: var(--clr-primary-800);
-    color: var(--clr-primary-200);
+    background: var(--clr-primary-200);
+    color: var(--clr-primary-800);
     text-align: left;
     padding-left: 20px;
     padding-top: 30vh;
@@ -224,14 +238,14 @@ button:hover {
     width: 100%;
     height: 200px;
     text-align: right;
-    border-right: 4px solid whitesmoke;
+    border-top: 10px solid var(--clr-primary-800);
     padding-right: 20px;
 }
 
 #skills .skills .skills-content-left {
     width: 50%;
-    background: var(--clr-primary-800);
-    color: var(--clr-primary-200);
+    background: var(--clr-primary-200);
+    color: var(--clr-primary-800);
     padding-right: 20px;
     padding-top: 50px;
 }
@@ -241,9 +255,10 @@ button:hover {
 #projects .projects {
    position: relative;
    margin: 0;
+   margin-bottom: 50px;
    padding: 0;
-   min-height: 550px;
-   background-color: var(--clr-primary-800);
+   min-height: 800px;
+   background-color: var(--clr-primary-200);
 }
 
 #projects .projects .album {
@@ -251,7 +266,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1020px;
+    width: 800px;
 }
 
 #projects .projects .album .box {
@@ -287,7 +302,7 @@ button:hover {
    padding: 0;
    top: 50%;
    transform: translateY(-50%);
-   color: var(--clr-primary-200);
+   color: var(--clr-primary-800);
    text-transform: uppercase;
    width: 100%;
    font-family: var(--ff-accent);
@@ -324,8 +339,8 @@ button:hover {
     text-align: right;
     align-items: center;
     justify-content: center;
-    border-right: 4px solid var(--clr-primary-200);
-    border-top: 4px solid var(--clr-primary-200);
+    border-right: 5px solid var(--clr-primary-200);
+    border-top: 5px solid var(--clr-primary-200);
     padding-right: 20px;
     padding-top: 10px;
 }
@@ -404,7 +419,7 @@ footer h5 {
     font-size: 16px;
 }
 
-/* Media Query start */
+/* Media Query start  */
 
 @media (max-width:1200px) {
     .section-p1 {
@@ -454,7 +469,6 @@ footer h5 {
     #hero .hero .right-container {
         padding-left: 20px;
         border-top: none;
-        border-left: 2px solid var(--clr-primary-200);
     }
        
     #hero .hero .hero-image {
@@ -479,9 +493,6 @@ footer h5 {
         width: 100%;
         height: 200px;
         text-align: left;
-        border-left: 2px solid var(--clr-primary-200);
-        border-bottom: 2px solid var(--clr-primary-200);
-        border-right: none;
         padding-left: 20px;
     }
 
@@ -493,8 +504,6 @@ footer h5 {
 
     #about .about .right-container {
         padding-left: 20px;
-        border-top: 2px solid var(--clr-primary-200);
-        border-left: 2px solid var(--clr-primary-200);
     }
 
     #about .about .about-content-right {
@@ -517,8 +526,6 @@ footer h5 {
 
     #skills .skills .left-container {
         padding-right: 20px;
-        border-bottom: 2px solid var(--clr-primary-200);
-        border-right: 2px solid var(--clr-primary-200);
     }   
 
     #skills .skills .skills-content-right {
@@ -534,9 +541,6 @@ footer h5 {
         width: 100%;
         height: 220px;
         text-align: right;
-        border-right: 2px solid var(--clr-primary-200);
-        border-top: 2px solid var(--clr-primary-200);
-        border-left: none;
         padding-left: 0;
         padding-right: 20px;
     }
@@ -550,30 +554,27 @@ footer h5 {
     #hero-bottom .hero-bottom .hero-bottom-content-left {
         padding-top: 0px;
         width: 100%;
+        padding-top: 40px;
     }
 
     #hero-bottom .hero-bottom .left-container {
         border-top: none;
-        border-right: 2px solid var(--clr-primary-200);
     }
 
     #hero-bottom .hero-bottom img {
         position: relative;
     }
-    /*
-    #hero .hero {
-        display: grid;
+
+    /* Projects */
+
+    #projects .projects .album {
+        width: 250px;
     }
 
-     #hero .hero .hero-content-left {
-        width: 100%;
-        padding-top: 0px;
+    #projects .projects {
+        min-height: 2300px;
     }
 
-     #hero .hero img {
-        position: relative;
-    }    
-    */
     /* Contacts */
    
     #contacts .container {
@@ -589,3 +590,4 @@ footer h5 {
         text-align: center;
     }
 }
+
