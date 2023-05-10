@@ -221,7 +221,7 @@ h1 {
     width: 100%;
     height: 100%;
   }
-  .div .box .imgBx:before {
+  /**/.div .box .imgBx:before {
     content: '';
     position: absolute;
     top: 0;
@@ -229,7 +229,7 @@ h1 {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg,#fff,#000);
-    z-index: 1;
+    z-index: -1;
     opacity: 0;
     transition: 0.5s;
     mix-blend-mode: multiply;
@@ -278,9 +278,9 @@ h1 {
     transform: rotateY(-25deg);
   }
 
-  .div .box:hover {
+  /**/.div .box:hover {
     transform: rotateY(0deg) scale(1.25);
-    z-index: 1;
+    z-index: -1;
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
   }
 
@@ -305,7 +305,7 @@ h1 {
     display: flex;
 }
 
-#about .card {
+#about .details {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -321,11 +321,11 @@ h1 {
     justify-content: center;
 }
 
-#about .card-content {
+#about .details-content {
     width: 50%;
 }
 
-#about .card-img {
+#about .details-img {
     width: 50%;
 }
 
@@ -542,17 +542,17 @@ footer h5 {
         width: 100%;
     }
 
-    #about .card {
+    #about .details {
         gap: 20px;
         padding: 90px 10px;
         flex-direction: column;
     }
 
-    #about .card-img {
+    #about .details-img {
         width: 100%;
     }
 
-    #about .card-content {
+    #about .details-content {
         width: 100%;
     }
 
@@ -667,17 +667,17 @@ footer h5 {
         padding: 10px;
     }
 
-    #about .card {
+    #about .details {
         gap: 20px;
         padding: 90px 10px;
         flex-direction: column;
     }
 
-    #about .card-img {
+    #about .details-img {
         width: 100%;
     }
 
-    #about .card-content {
+    #about .details-content {
         width: 100%;
     }
 
