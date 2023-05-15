@@ -39,3 +39,15 @@ $(function(){
   
   recheck();
 });
+
+
+/* Lightbox - gallery */
+
+$('#gallery').lbtLightBox({
+  qtd_pagination: 6,
+  pagination_width: "160px",
+  pagination_height: "160px",
+  custom_children: ".item img",
+  captions: true,
+	captions_selector: ".caption p",
+});
