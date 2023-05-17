@@ -209,7 +209,7 @@ h1 {
  #banner h1,
  #banner2 h1 {
    text-align: center;
-   padding-top: 250px;
+   padding-top: 240px;
    color: var(--clr-primary-200);
    font-size: 52px;
  }
