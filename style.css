@@ -534,6 +534,24 @@ footer h5 {
         width: 100%;
     }
 
+     /* Banner */
+
+     #banner .parallax {
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    #banner2 .parallax {
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    #banner h1, #banner2 h1 {
+        text-align: center;
+        padding-top: 130px;
+        font-size: 28px;
+    }
+
     #projects .projects .album {
         padding-left: 20px;
     }
