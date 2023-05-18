@@ -692,14 +692,7 @@ footer h5 {
     }
 
     #lbt_videoplayer {
-        overflow: hidden;
         width: 100%;
-    }
-
-    #lbt-thumbnails {
-        display: flex;
-        flex-direction: column;
-        height: 100px;
     }
 
     /* Projects */
