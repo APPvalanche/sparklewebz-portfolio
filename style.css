@@ -306,7 +306,7 @@ h1 {
     margin:0;
     padding:0;
     object-fit: cover;
-    height: 315px;
+    height: 100%;
 }
 
 #gallery .caption{
@@ -632,6 +632,22 @@ footer h5 {
 
     /* Banner */
 
+    #banner .parallax {
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    #banner2 .parallax {
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    #banner h1, #banner2 h1 {
+        text-align: center;
+        padding-top: 130px;
+        font-size: 18px;
+    }
+
     /* About bottom */
 
     #about .wrapper {
@@ -672,7 +688,7 @@ footer h5 {
     }
 
     .item {
-        width: 90%;
+        width: 80%;
     }
 
     /* Projects */
