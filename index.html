@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-     <!--Video-lightbox -->
-    <link rel="stylesheet" href="jquery.lbt-lightbox.min.css"/>
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
@@ -110,40 +108,27 @@
             </div>
         </section>
 
-        <section id="work">
-            <h1> #My Work</h1>
-            <div id="gallery">
-                <div class="item fly">
-                    <video>
-                        <source src="videos/Burger.mp4" type="video/mp4"/>
-                    </video>
-                  <div class="caption">
-                      <p>Burger Takeaway
-                      </p>
-                  </div>
-                </div>
-                <div class="item fly">
-                    <video>
-                        <source src="videos/TravelHub.mp4" type="video/mp4"/>
-                    </video>
-                  <div class="caption">
-                      <p>Travel Hub
-                      </p>
-                  </div>
-                </div>
-                <div class="item fly">
-                    <video>
-                        <source src="videos/sparklewebz-gym.mp4" type="video/mp4"/>
-                    </video>
-                  <div class="caption">
-                      <p>Sparklewebz Gym
-                      </p>
-                  </div>
+        <section id="videogallery">
+            <div class="container">
+
+                <div class="title">#my work Video gallery</div>
+
+                <div class="video-all">
+                    <div class="video">
+                        <video src="videos/sparklewebz-gym.mp4" muted></video>
+                    </div>
+                    <div class="video">
+                        <video src="videos/burger.mp4" muted></video>
+                    </div>
+                    <div class="video">
+                        <video src="videos/TravelHub.mp4" muted></video>
+                    </div>
                 </div>
             </div>
         </section>
      
         <section id="projects" class="section-m1">
+            <div class="title">#my work</div>
             <div class="projects">
                     <div class="album">
                         <div class="box snake fly">
@@ -206,7 +191,7 @@
 
         <section id="banner2">
             <div class="parallax">
-                <h1>#Contact me</h1>
+                <h1>#Contacts</h1>
             </div>
         </section>
 
@@ -289,14 +274,6 @@
             header.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
-
-        <!-- Video-lightbox -->
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/index.min.js"></script>
-    <script src="js/jquery.lbt-lightbox.js"></script>
-    <script src="js/jquery.lbt-lightbox.min.js"></script>
-    <script src="script.js"></script>
 
         <!-- Snake album -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

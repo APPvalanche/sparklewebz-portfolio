@@ -40,14 +40,18 @@ $(function(){
   recheck();
 });
 
+/* Video gallery */
 
-/* Lightbox - gallery */
+var video = document.querySelectorAll('video')
 
-$('#gallery').lbtLightBox({
-  qtd_pagination: 6,
-  pagination_width: "160px",
-  pagination_height: "160px",
-  custom_children: ".item img",
-  captions: true,
-	captions_selector: ".caption p",
-});
+video.forEach(play => play.addEventListener('click', () => {
+  play.classList.toggle('active');
+
+
+  if(play.paused){
+    play.play();
+  }else{
+    play.pause();
+    play.currentTime = 0;
+  }
+}))
