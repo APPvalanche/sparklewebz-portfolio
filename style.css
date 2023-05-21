@@ -283,6 +283,7 @@ h1 {
     text-align: center;
     color: var(--clr-primary-800);
     text-transform: capitalize;
+    text-decoration: overline;
 }
 
 #videogallery .container .video-all {
@@ -340,6 +341,7 @@ h1 {
     text-align: center;
     color: var(--clr-primary-800);
     text-transform: capitalize;
+    text-decoration: overline;
 }
 
 #projects {
@@ -690,6 +692,10 @@ footer h5 {
     #about .description {
         width: 100%;
         padding: 10px;
+    }
+
+    #about .black {
+        border-top: 1px solid var(--clr-primary-800);
     }
 
     #about .details {
