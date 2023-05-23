@@ -140,6 +140,16 @@ h1 {
     transition: 0.6s;
 }
 
+#logo a {
+    text-decoration: none;
+    color: var(--clr-primary-200);
+}
+
+#logo a:hover {
+    color: var(--clr-accent-800);
+    transition: all 0.3s ease 0s;
+}
+
 .nav-links {
     list-style: none;
     position: relative;
@@ -178,11 +188,12 @@ h1 {
 }
 
 #header.sticky .nav-links li a,
-#header.sticky #logo {
+#header.sticky #logo a {
     color: var(--clr-primary-800);
 }
 
-#header.sticky .nav-links li a:hover {
+#header.sticky .nav-links li a:hover,
+#header.sticky #logo a:hover {
     color: var(--clr-accent-800);
 }
 
@@ -730,7 +741,7 @@ footer h5 {
     }
 
     #banner2 .buttons {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 300px;
     }
 
