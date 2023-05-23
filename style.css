@@ -244,12 +244,12 @@ h1 {
 
 #about .description h2 {
     font-size: 38px;
+    text-decoration: overline;
 }
 
 #about .description h1 {
     font-size: 62px;
     color: var(--clr-primary-800);
-    text-shadow: 1px 1px 1px var(--clr-primary-800);
 }
 
 #about .description h6 {
@@ -474,7 +474,6 @@ h1 {
     text-transform: capitalize;
     font-size: 22px;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
-
 }
 
 #btn-appointment a,
@@ -595,7 +594,7 @@ footer h5 {
     #about .details {
         gap: 20px;
         padding: 90px 10px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #about .details-img {
@@ -755,14 +754,10 @@ footer h5 {
         padding: 10px;
     }
 
-    #about .black {
-        border-top: 1px solid var(--clr-primary-800);
-    }
-
     #about .details {
         gap: 20px;
         padding: 90px 10px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #about .details-img {
