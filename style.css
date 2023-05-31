@@ -247,13 +247,6 @@ h1 {
     font-size: 22px;
 }
 
- #banner h1 {
-   text-align: center;
-   padding-top: 240px;
-   color: var(--clr-primary-200);
-   font-size: 52px;
- }
-
 /* About section */
 
 #about {
@@ -370,6 +363,15 @@ h1 {
     border-radius: 1rem;
     overflow: hidden;
     margin: 1rem;
+    position: relative;
+}
+
+#videogallery .container .video-all .video .play-icon {
+    position: absolute;
+    top: 32%;
+    left: 42%;
+    color: var(--clr-primary-200);
+    font-size: 48px;
 }
 
 #videogallery .container .video-all .video video {
@@ -545,8 +547,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    position: relative;
-    top: 25%;
+    padding-top: 275px;
  }
 
 #btn-appointment {
@@ -702,20 +703,22 @@ footer h5 {
         padding: 10px;
     }
 
+    #banner .parallax .cards .card svg {
+        font-size: 75px;
+    }
+
+    #banner .parallax .cards .card p {
+        padding-top: 0px;
+        font-size: 18px;
+    }
+
     #banner2 .parallax {
         height: 100vh;
         background-attachment: scroll;
     }
 
     #banner2 .buttons {
-        height: 300px;
         gap: 10px;
-    }
-
-    #banner h1 {
-        text-align: center;
-        padding-top: 130px;
-        font-size: 28px;
     }
 
     #projects .projects .album {
